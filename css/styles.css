@@ -16,7 +16,7 @@ ul {
 
 /* --------------------------- */
 
-h2 {
+.section-title {
     color: #2e2f42;
     font-size: 36px;
     line-height: 1.11;
@@ -24,7 +24,7 @@ h2 {
     text-align: center;
 }
 
-h3 {
+.section-item-subtitle {
     color: #2e2f42;
     font-size: 20px;
     font-weight: 500;
@@ -32,7 +32,7 @@ h3 {
     letter-spacing: 0.02em;
 }
 
-p {
+.section-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
