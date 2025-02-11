@@ -32,6 +32,10 @@ button {
     cursor: pointer;
 }
 
+img {
+    display: block;
+}
+
 .container {
     max-width: 1158px;
     padding-left: 15px;
@@ -41,6 +45,8 @@ button {
 
 .container-flex {
     display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .section {
@@ -103,8 +109,9 @@ button {
 /* ----------------------- HEADER ----------------------- */
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-nav {
@@ -167,9 +174,6 @@ button {
 .hero {
     background-color: #2e2f42;
     color: #ffffff;
-}
-
-.hero-wrapper {
     padding-top: 188px;
     padding-bottom: 188px;
     padding-left: 316px;
@@ -291,9 +295,7 @@ button {
 }
 
 .portfolio-item-container {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 16px;
+    padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
 }
@@ -315,6 +317,8 @@ button {
 
 .footer-logo-accent {
     color: #f4f4fd;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-text {
