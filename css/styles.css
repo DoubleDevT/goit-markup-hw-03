@@ -1,17 +1,65 @@
 body {
     font-family: "Roboto", sans-serif;
     background-color: #ffffff;
-    /* color: #2e2f42;          мені здавалося, що цього кольору було більше, але автоперевірка вирішила інакше */
     color: #434455;
 }
 
 a {
     text-decoration: none;
-    /* font-style: normal;      автоперевірка наполягає на використанні цього правила у селекторі .header-address */
 }
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /* --------------------------- */
@@ -22,6 +70,7 @@ ul {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 72px;
 }
 
 .section-item-subtitle {
@@ -30,6 +79,8 @@ ul {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+
+    margin-bottom: 8px;
 }
 
 .section-text {
@@ -39,7 +90,6 @@ ul {
 }
 
 .logo {
-    /* color: #2e2f42; */
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -47,14 +97,19 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 /* ----------------------- HEADER ----------------------- */
 
 .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-nav {
+    display: flex;
+    align-items: center;
 }
 
 .header-logo-accent {
@@ -62,6 +117,8 @@ ul {
 }
 
 .header-nav-menu {
+    display: flex;
+    gap: 40px;
 }
 
 .header-nav-item {
@@ -82,10 +139,12 @@ ul {
 }
 
 .header-address {
-    font-style: normal;
+    margin-left: auto;
 }
 
 .header-address-list {
+    display: flex;
+    gap: 40px;
 }
 
 .header-address-item {
@@ -110,17 +169,31 @@ ul {
     color: #ffffff;
 }
 
+.hero-wrapper {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    padding-left: 316px;
+    padding-right: 316px;
+}
+
 .hero-title {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+
+    max-width: 496px;
+    margin: 0 auto;
+
+    margin-bottom: 48px;
 }
 
 .hero-btn {
     background-color: #4d5ae5;
-    /* wi--dth: 169px;
-    hei--ght: 56px;           автоперевірка насварила, відімкну у наступній дз :) */
+    border-radius: 4px;
+    border: none;
+    min-width: 169px;
+    height: 56px;
     /* --- */
     color: inherit;
     font-size: 16px;
@@ -128,7 +201,9 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.04em;
     /* --- */
-    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 16px 32px;
 }
 
 .hero-btn:hover,
@@ -142,9 +217,12 @@ ul {
 }
 
 .benefits-list {
+    display: flex;
+    gap: 24px;
 }
 
 .benefits-item {
+    width: calc((100% - 24px * 3) / 4);
 }
 
 .benefits-item-subtitle {
@@ -164,13 +242,22 @@ ul {
 }
 
 .team-list {
+    display: flex;
+    gap: 24px;
 }
 
 .team-item {
     background-color: #ffffff;
+    border-radius: 0 0 4px 4px;
+    width: calc((100% - 24px * 3) / 4);
 }
 
 .team-item-image {
+}
+
+.team-item-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .team-item-subtitle {
@@ -191,12 +278,24 @@ ul {
 }
 
 .portfolio-list {
+    display: flex;
+    column-gap: 24px;
+    row-gap: 48px;
+    flex-wrap: wrap;
 }
 
 .portfolio-item {
 }
 
 .portfolio-item-image {
+}
+
+.portfolio-item-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .portfolio-item-subtitle {
@@ -210,6 +309,8 @@ ul {
 .footer {
     background-color: #2e2f42;
     color: #f4f4fd;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-logo-accent {
@@ -218,4 +319,6 @@ ul {
 
 .footer-text {
     color: inherit;
+    margin-top: 16px;
+    width: calc((100% - 24px * 3) / 4);
 }
