@@ -111,6 +111,7 @@ img {
     /* padding-top: 24px;
     padding-bottom: 24px; */
     border-bottom: 1px solid #e7e9fc;
+    padding: 24px 0;
 }
 
 .header-nav {
@@ -128,8 +129,6 @@ img {
 }
 
 .header-nav-item {
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .header-nav-link {
@@ -156,8 +155,6 @@ img {
 }
 
 .header-address-item {
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .header-address-link {
@@ -178,8 +175,8 @@ img {
     background-color: #2e2f42;
     color: #ffffff;
     padding: 188px 0;
-    padding-left: 316px;
-    padding-right: 316px;
+    /* padding-left: 316px;
+    padding-right: 316px; */
 }
 
 .hero-title {
