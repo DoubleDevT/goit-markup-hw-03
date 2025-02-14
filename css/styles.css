@@ -109,13 +109,15 @@ img {
 
 .header {
     border-bottom: 1px solid #e7e9fc;
-    /* padding-top: 24px;
-    padding-bottom: 24px; */
 }
 
 .header-nav {
     display: flex;
     align-items: center;
+}
+
+.header-logo {
+    padding: 24px 0;
 }
 
 .header-logo-accent {
@@ -131,6 +133,7 @@ img {
 }
 
 .header-nav-link {
+    display: block;
     padding: 24px 0;
     color: #2e2f42;
     font-size: 16px;
@@ -150,7 +153,6 @@ img {
 }
 
 .header-address-list {
-    padding: 24px 0;
     display: flex;
     gap: 40px;
 }
@@ -159,6 +161,8 @@ img {
 }
 
 .header-address-link {
+    display: block;
+    padding: 24px 0;
     color: inherit;
     font-size: 16px;
     line-height: 1.5;
